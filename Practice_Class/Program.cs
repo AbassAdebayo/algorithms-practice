@@ -100,32 +100,32 @@
 
 
 
-// for (int i = 0; i < letters.Count; i++)
-// {
-//     int check1 = string.Compare(target, letters[i], StringComparison.Ordinal);
-//     int check2 = string.Compare(letters[i], smallestLetter, StringComparison.Ordinal);
+for (int i = 0; i < letters.Count; i++)
+{
+    int check1 = string.Compare(target, letters[i], StringComparison.Ordinal);
+    int check2 = string.Compare(letters[i], smallestLetter, StringComparison.Ordinal);
 
-//     if (check < 0)
-//     {
-//         result = smallestLetter;
-//     }
+    if (check < 0)
+    {
+        result = smallestLetter;
+    }
 
-//     else if (target.CompareTo(letters[i]) > 0 || target == letters[i])
-//     {
-//         result = letters[0];
-//     }
-//     else
-//     {
-//         if (target.CompareTo(letters[i]) < 0)
-//         {
-//             smallestLetter = letters.Min();
-//             if(target.CompareTo(smallestLetter) < 0)
-//             result = smallestLetter;
-//         }
+    else if (target.CompareTo(letters[i]) > 0 || target == letters[i])
+    {
+        result = letters[0];
+    }
+    else
+    {
+        if (target.CompareTo(letters[i]) < 0)
+        {
+            smallestLetter = letters.Min();
+            if(target.CompareTo(smallestLetter) < 0)
+            result = smallestLetter;
+        }
         
-//     }
+    }
     
-// }
+}
 
 // Console.WriteLine($"Output: {result}");
 
